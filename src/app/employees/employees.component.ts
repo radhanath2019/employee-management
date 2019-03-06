@@ -15,6 +15,7 @@ export class EmployeesComponent implements OnInit {
   addEmployee(){
     
     var obj={
+
       id:this.employees.length+1,
       name:this.employee.name,
       email:this.employee.email,
@@ -22,7 +23,10 @@ export class EmployeesComponent implements OnInit {
       address:this.employee.address
     }
     this.employees.push(obj);
-    this.employee={id:1,name:'',email:'',phone:0,address:''};
+
+    // this.employee={id:1,name:'',email:'',phone:0,address:''}; 
+    localStorage.setItem('employees', JSON.stringify(this.employees));
+    sessionStorage.setItem('employees', JSON.stringify(this.employees));
   }
   removeEmployee(){
     for(var i =0;i<this.employees.length;i++){
