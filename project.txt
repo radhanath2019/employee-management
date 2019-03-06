@@ -1,0 +1,23 @@
+Create a project from scratch
+Emplyee-Management
+
+Route:
+/status (on Router)
+/employees (on Router)
+menu 
+{id:'1', name:'',phone:'', email:'', address:''}
+camelCase
+
+20 (list)
+20 (add )
+20 (delete)
+20 (edit)
+10 (proper camel case)
+10 (delete on record X)
+
+
+
+
+
+
+
